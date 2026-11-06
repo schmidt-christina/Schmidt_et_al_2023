@@ -47,8 +47,7 @@ if __name__ == '__main__':
     '''Open contour data'''
     isobath_depth = 1000
     outfile = (
-        '/g/data/v45/akm157/model_data/access-om2/Antarctic_slope_contour_' +
-        str(isobath_depth) + 'm.npz')
+        'Antarctic_slope_contour_' + str(isobath_depth) + 'm.npz')
     data = np.load(outfile)
     mask_y_transport = data['mask_y_transport']
     mask_x_transport = data['mask_x_transport']
